@@ -94,6 +94,11 @@
                     <li>{{ $person }}</li>
                 @endforeach
 
+                {{-- conditional statement --}}
+                @if (!empty($people))
+                    <h1>The $people array is NOT empty</h1>
+                @endif
+
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
