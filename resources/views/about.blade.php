@@ -82,6 +82,19 @@
                     About
                 </div>
 
+                <!-- NOT using blade -->
+                <?php foreach ($people as $person) : ?>
+                    <li><?= $person; ?></li>
+                <?php endforeach; ?>
+
+                <hr>
+
+                <!-- USING blade -->
+                @foreach ($people as $person)
+                    <li>{{ $person }}</li>
+                @endforeach
+
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>

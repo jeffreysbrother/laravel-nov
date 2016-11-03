@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('about', function () {
-    return view('about');
+	$people = ['james', 'jeffrey', 'dennis'];
+    return view('about', compact('people'));
 });
